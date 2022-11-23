@@ -10,7 +10,7 @@ class ImagesService {
 
     async pullImages() {
         const res = await imagesApi.get()
-        console.log('got images', res.data);
+        // console.log('got images', res.data);
         appState.image = new Image(res.data)
     }
 

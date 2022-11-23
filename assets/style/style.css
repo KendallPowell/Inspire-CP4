@@ -1,4 +1,9 @@
 /* BASIC STYLES HERE */
+body {
+    background-size: cover;
+    background-position: center;
+}
+
 #background {
     background-size: cover;
 }

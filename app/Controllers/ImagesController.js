@@ -11,7 +11,7 @@ function _drawBackground() {
 
 export class ImagesController {
     constructor() {
-        console.log('ImagesController working');
+        // console.log('ImagesController working');
         this.pullImages()
         appState.on('image', _drawBackground)
     }
