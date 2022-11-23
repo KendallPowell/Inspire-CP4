@@ -8,6 +8,9 @@ class AppState extends EventEmitter {
   // values = loadState('values', [Value])
 
 
+  /** @type {import('./Models/Image').Image} */
+  image = ''
+
 
 }
 
