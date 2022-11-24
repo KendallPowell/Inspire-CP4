@@ -18,5 +18,8 @@
         "titleBar.inactiveBackground": "#10632299",
         "titleBar.inactiveForeground": "#e7e7e799"
     },
-    "peacock.color": "#106322"
+    "peacock.color": "#106322",
+    "cSpell.words": [
+        "Todos"
+    ]
 }

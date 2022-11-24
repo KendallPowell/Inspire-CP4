@@ -8,7 +8,6 @@ export class Quote {
 
     get QuoteTemplate() {
         return `
-        <div class="col-6 text-white">
             <div class="text-center">
                 <div>
                     <p>${this.content}</p>
@@ -17,7 +16,6 @@ export class Quote {
                     <h4>${this.author}</h4>
                 </div>
             </div>
-        </div>
         `
     }
 }

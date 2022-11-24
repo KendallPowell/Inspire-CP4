@@ -16,38 +16,58 @@
 </head>
 
 <body id="background">
-  <main class="container-fluid">
-    <section class="row justify-content-end mt-2">
-      <div class="col-11">
-        <div class="text-white">Image By</div>
-        <div id="author" class="text-white"></div>
-      </div>
-      <div class="col-1 text-center text-white selectable p-2" id="weather" onclick="">
+  <header class="row justify-content-between container-fluid">
+    <div class="col-2">
+      <div class="text-white">Image By</div>
+      <div id="author" class="text-white"></div>
+    </div>
+    <div class="col-1 text-center">
+      <div class="text-white selectable p-2" id="weather" onclick="">
         <!-- <div>Boise</div>
-        <div>34</div>
-        <div>Sunny</div>
-        <i></i> -->
+          <div>34</div>
+          <div>Sunny</div>
+          <i></i> -->
       </div>
-    </section>
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid">
+      <section class="row justify-content-center">
+        <div class="col-6">
+          04:17 PM
+        </div>
+      </section>
 
 
 
 
 
 
+    </div>
   </main>
   <footer class="container-fluid">
-    <section class="row justify-content-center align-content-center" id="quote">
-      <!-- <div class="col-6 text-white">
-        <div class="text-center">
+    <section class="row justify-content-center align-content-center">
+      <div class="col-2"></div>
+      <div class="col-6 text-white" id="quote">
+        <!-- <div class="text-center">
           <div>
             <p>${this.content}</p>
           </div>
           <div class="on-hover">
             <h4>${this.author}</h4>
           </div>
+        </div> -->
+      </div>
+      <div class="col-1"></div>
+      <div class="col-3">
+        <form onsubmit="app.todosController.createNewTodo()">
+          <input class="w-75" type="text" id="description" name="description">
+          <button class="btn btn-primary" title="Make New Todo"><i class="mdi mdi-plus"></i></button>
+        </form>
+        <div id="todo-list">
+
         </div>
-      </div> -->
+      </div>
     </section>
   </footer>
 

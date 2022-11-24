@@ -17,6 +17,8 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Weather').Weather} */
   weather = ''
 
+  /** @type {import('./Models/Todo').Todo[]} */
+  todo = []
 
 }
 
