@@ -11,6 +11,8 @@ class AppState extends EventEmitter {
   /** @type {import('./Models/Image').Image} */
   image = ''
 
+  time = ''
+
   /** @type {import('./Models/Quote').Quote} */
   quote = ''
 
