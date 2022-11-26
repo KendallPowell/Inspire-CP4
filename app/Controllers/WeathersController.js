@@ -24,4 +24,9 @@ export class WeathersController {
             console.error(error)
         }
     }
-}
+
+    toggle() {
+        appState.weather.fahrenheitDisplayed = !appState.weather.fahrenheitDisplayed
+        appState.emit('weather')
+    }
+} 

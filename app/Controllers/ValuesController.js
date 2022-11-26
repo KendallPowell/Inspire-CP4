@@ -3,6 +3,12 @@ import { valuesService } from "../Services/ValuesService.js";
 import { Pop } from "../Utils/Pop.js";
 import { setHTML } from "../Utils/Writer.js";
 
+let spellCount = appState.mySpells.filter(s => s.prepared == true).length
+if (spellCount <= 10) {
+  setHTML('spell-count', `<div>${spellCount}/10</div>`)
+} else {
+  setHTML('spell-count', `<div class="text-danger">⚠️${spellCount}/10</div>`)
+}
 
 //Private
 function _draw() {
@@ -39,7 +45,7 @@ export class ValuesController {
       valuesService.removeValue(id)
     }
   }
-  
+
   async clearAll() {
     const yes = await Pop.confirm('Remove All Rolls?')
     if (yes) {

@@ -10,7 +10,7 @@ export const quotesApi = new axios.create({
 class QuotesService {
     async pullQuotes() {
         const res = await quotesApi.get()
-        console.log('got quotes', res.data);
+        // console.log('got quotes', res.data);
         appState.quote = new Quote(res.data)
     }
 }

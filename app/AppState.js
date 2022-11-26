@@ -20,7 +20,7 @@ class AppState extends EventEmitter {
   weather = ''
 
   /** @type {import('./Models/Todo').Todo[]} */
-  todo = []
+  todos = []
 
 }
 

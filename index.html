@@ -22,7 +22,7 @@
       <div id="author" class="text-white"></div>
     </div>
     <div class="col-1 text-center">
-      <div class="text-white selectable p-2" id="weather" onclick="">
+      <div class="text-white selectable p-2" id="weather">
         <!-- <div>Boise</div>
           <div>34</div>
           <div>Sunny</div>
@@ -30,15 +30,25 @@
       </div>
     </div>
   </header>
-  <main class="d-flex align-items-center">
-    <div class="container-fluid">
-      <section class="row justify-content-center">
-        <div class="col-6" id="time">
-          <!-- <h1 class="text-center text-white">
-            time
-          </h1> -->
+  <main class="container-fluid">
+    <section class="row justify-content-center">
+      <h1 class="col-6 text-end text-white" id="time">
+      </h1>
+      <div class="col-3"></div>
+      <div class="col-2">
+        <form onsubmit="app.todosController.createNewTodo()">
+          <input class="w-75" type="text" id="description" name="description" required>
+          <button class="btn btn-primary" title="Make New Todo"><i class="mdi mdi-plus"></i></button>
+        </form>
+        <div id="completed"></div>
+        <div class="row align-items-center bg-dark rounded" id="todo-list">
+          <!-- <div class="col-2 px-0  bg-dark">
+            <input type="checkbox" class="ms-2">
+          </div>
+          <div class="col-8 px-0 text-start text-white bg-dark">todo description</div>
+          <div class="col-1 px-0 bg-dark fs-4 mdi mdi-delete-empty"></div> -->
         </div>
-      </section>
+    </section>
 
 
 
@@ -61,15 +71,7 @@
         </div> -->
       </div>
       <div class="col-1"></div>
-      <div class="col-3">
-        <form onsubmit="app.todosController.createNewTodo()">
-          <input class="w-75" type="text" id="description" name="description">
-          <button class="btn btn-primary" title="Make New Todo"><i class="mdi mdi-plus"></i></button>
-        </form>
-        <div id="todo-list">
 
-        </div>
-      </div>
     </section>
   </footer>
 
