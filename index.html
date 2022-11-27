@@ -30,25 +30,25 @@
       </div>
     </div>
   </header>
-  <main class="container-fluid">
-    <section class="row justify-content-center">
-      <h1 class="col-6 text-end text-white" id="time">
-      </h1>
-      <div class="col-3"></div>
-      <div class="col-2">
-        <form onsubmit="app.todosController.createNewTodo()">
+  <main class="container-fluid row justify-content-center">
+    <h1 class="col-7 text-end text-white d-flex align-items-center justify-content-end" id="time">
+    </h1>
+    <div class="col-3"></div>
+    <div class="col-2 align-self-end">
+      <section class="row align-content-center">
+        <div class="row align-items-center bg-dark rounded" id="todo-list">
+          <!-- <div class="col-2 px-0  bg-dark">
+          <input type="checkbox" class="ms-2">
+        </div>
+        <div class="col-8 px-0 text-start text-white bg-dark">todo description</div>
+        <div class="col-1 px-0 bg-dark fs-4 mdi mdi-delete-empty"></div> -->
+          <!-- <div id="completed"></div> -->
+        </div>
+        <form onsubmit="app.todosController.createNewTodo()" class="">
           <input class="w-75" type="text" id="description" name="description" required>
           <button class="btn btn-primary" title="Make New Todo"><i class="mdi mdi-plus"></i></button>
         </form>
-        <div id="completed"></div>
-        <div class="row align-items-center bg-dark rounded" id="todo-list">
-          <!-- <div class="col-2 px-0  bg-dark">
-            <input type="checkbox" class="ms-2">
-          </div>
-          <div class="col-8 px-0 text-start text-white bg-dark">todo description</div>
-          <div class="col-1 px-0 bg-dark fs-4 mdi mdi-delete-empty"></div> -->
-        </div>
-    </section>
+      </section>
 
 
 
@@ -59,8 +59,7 @@
   </main>
   <footer class="container-fluid">
     <section class="row justify-content-center align-content-center">
-      <div class="col-2"></div>
-      <div class="col-6 text-white" id="quote">
+      <div class="col-12 text-white" id="quote">
         <!-- <div class="text-center">
           <div>
             <p>${this.content}</p>
@@ -70,7 +69,6 @@
           </div>
         </div> -->
       </div>
-      <div class="col-1"></div>
 
     </section>
   </footer>

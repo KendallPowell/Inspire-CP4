@@ -10,8 +10,13 @@ function _drawTodos() {
     todos.forEach(t => template += t.MyTodoTemplate)
     setHTML('todo-list', template)
     let total = appState.todos.length
-    let completed = appState.todos.filter(t => t.completed == true).length
-    setHTML('completed', `<div class="text-center text-white bg-dark rounded-top" id="completed">${completed}/${total}</div>`)
+    let completed = appState.todos.filter(t => t.completed == false).length
+    setHTML('completed', `
+    <div class="text-center text-white bg-dark rounded">
+    <span class="me-3">Uncompleted:</span>
+    ${completed}/${total}
+    </div>
+    `)
 
 
 

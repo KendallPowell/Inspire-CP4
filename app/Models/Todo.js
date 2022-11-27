@@ -9,6 +9,7 @@ export class Todo {
 
     get MyTodoTemplate() {
         return `
+        <div id="completed" class="mb-2"></div>
         <div class="col-2 px-0  bg-dark">
             <input class="ms-2" type="checkbox" ${this.completed ? 'checked' : ''} onchange="app.todosController.completedTodo('${this.id}')"/>
         </div>

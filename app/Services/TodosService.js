@@ -24,7 +24,7 @@ class TodosService {
         // console.log('completed todo!', selectedTodo)
         selectedTodo.completed = !selectedTodo.completed
         const res = await sandboxApi.put(id, selectedTodo)
-        appState.emit('todo-list')
+        appState.emit('todos')
     }
 
     async removeTodo(id) {
