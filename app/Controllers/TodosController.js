@@ -59,7 +59,7 @@ export class TodosController {
 
     async removeTodo(id) {
         try {
-            if (await Pop.confirm('Delete note?')) {
+            if (await Pop.confirm('Delete this todo?')) {
                 todosService.removeTodo(id)
             }
         } catch (error) {

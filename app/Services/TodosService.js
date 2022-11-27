@@ -28,7 +28,6 @@ class TodosService {
     }
 
     async removeTodo(id) {
-        // debugger
         const res = await axios.delete('https://bcw-sandbox.herokuapp.com/api/kendall/todos/' + id)
         console.log('deleting', res.data)
         appState.todos = appState.todos.filter(f => f.id != id)
